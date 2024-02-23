@@ -128,7 +128,7 @@ This report will provide detailed information about which parts of the code are 
 
 Below is a screenshot showing the execution of unit tests:
 
-![Unit Testing Screenshot](unittesting.png)
+![Unit Testing Screenshot](https://i.ibb.co/RgrYc7W/unittesting.png)
 
 ## Creator
 
