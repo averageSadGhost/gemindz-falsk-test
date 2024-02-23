@@ -29,7 +29,7 @@ To run the Gemindz Test Application locally, follow these steps:
 2. Clone this repository to your local machine using:
 ```
 
-git clone https://github.com/your_username/gemindz-test-app.git
+git clone https://github.com/averageSadGhost/gemindz-falsk-test.git
 
 ```
 
