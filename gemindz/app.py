@@ -23,12 +23,18 @@ def create_app():
     register_blueprints(flask_app)
 
     # Register after request function
-
     @flask_app.after_request
     def after_request_func(response):
-        # Log request details
-        Log.log_request(endpoint=request.path, method=request.method,
-                        status_code=response.status_code, error=None)
+        try:
+            # Check if the response has an error
+            error = response.json.get('error') if response.json else None
+            # Log request details
+            Log.log_request(endpoint=request.path, method=request.method,
+                            status_code=response.status_code, error=error)
+        except Exception as e:
+            # Log the exception if an error occurs during logging
+            flask_app.logger.error(
+                f"An error occurred while logging request details: {e}")
         return response
 
     # Error handler for SQLAlchemy errors
