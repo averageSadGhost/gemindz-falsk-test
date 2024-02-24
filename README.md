@@ -37,7 +37,7 @@ git clone https://github.com/averageSadGhost/gemindz-falsk-test.git
 
 ```
 
-cd gemindz-test-app
+cd gemindz-falsk-test
 
 ```
 
